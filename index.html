@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vlad</title>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+        }
+        
+        body {
+            font-family: 'Source Code Pro', monospace;
+        }
+        
+        .wrap {
+            padding: 10% 20%;
+        }
+        
+        h2 {
+            margin-top: 3em;
+            color: grey;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+        
+        .underlined {
+            color: black;
+            flex: 1;
+            font-size: 2em;
+            line-height: 1.2;
+            text-decoration: none;
+            background-image: linear-gradient(to right, yellow 0, yellow 100%);
+            background-position: 0 1.2em;
+            background-size: 0 100%;
+            background-repeat: no-repeat;
+            transition: background .5s;
+        }
+        
+        .underlined:hover {
+            background-size: 100% 100%;
+        }
+        
+        .underlined--thin {
+            background-image: linear-gradient(to right, black 0, black 100%);
+        }
+        
+        .underlined--thick {
+            background-position: 0 -0.1em;
+        }
+        
+        .underlined--offset {
+            background-position: 0 0.2em;
+            box-shadow: inset 0 -.5em 0 0 white;
+        }
+        
+        .underlined--gradient {
+            background-position: 0 -0.1em;
+            background-image: linear-gradient(to right, yellow 0, lightgreen 100%);
+        }
+        
+        .underlined--reverse {
+            background-position: 100% -0.1em;
+            transition: background 1s;
+            background-image: linear-gradient(to right, yellow 0, yellow 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>About</h2>
+        <a href="#" class="underlined underlined--gradient">Kolupaev Vladislav</a>
+        <h2>ASP.NET Developer </h2>
+        <a href="#" class="underlined underlined--gradient">Middle ASP.NET Developer</a>
+        <h2>My mail</h2>
+        <a href="#" class="underlined underlined--gradient">kolupaev.vld@yandex.ru</a>
+    </div>
+</body>
+
+</html>

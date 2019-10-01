@@ -12,49 +12,53 @@ body {
     -moz-animation: Test 2s ease infinite;
     -o-animation: Test 2s ease infinite;
     animation: Test 2s ease infinite;
-    @-webkit-keyframes Test {
-        0% {
-            background-position: 0% 82%
-        }
-        50% {
-            background-position: 100% 19%
-        }
-        100% {
-            background-position: 0% 82%
-        }
+}
+
+@-webkit-keyframes Test {
+    0% {
+        background-position: 0% 82%
     }
-    @-moz-keyframes Test {
-        0% {
-            background-position: 0% 82%
-        }
-        50% {
-            background-position: 100% 19%
-        }
-        100% {
-            background-position: 0% 82%
-        }
+    50% {
+        background-position: 100% 19%
     }
-    @-o-keyframes Test {
-        0% {
-            background-position: 0% 82%
-        }
-        50% {
-            background-position: 100% 19%
-        }
-        100% {
-            background-position: 0% 82%
-        }
+    100% {
+        background-position: 0% 82%
     }
-    @keyframes Test {
-        0% {
-            background-position: 0% 82%
-        }
-        50% {
-            background-position: 100% 19%
-        }
-        100% {
-            background-position: 0% 82%
-        }
+}
+
+@-moz-keyframes Test {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes Test {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes Test {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
     }
 }
 

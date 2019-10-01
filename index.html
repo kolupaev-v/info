@@ -12,15 +12,56 @@
         
         body {
             font-family: 'Source Code Pro', monospace;
+            background: linear-gradient(241deg, #18c296, #126dcb);
+            background-size: 400% 400%;
+            -webkit-animation: AnimationName 2s ease infinite;
+            -moz-animation: AnimationName 2s ease infinite;
+            -o-animation: AnimationName 2s ease infinite;
+            animation: AnimationName 2s ease infinite;
+            @-moz-keyframes AnimationName {
+                0% {
+                    background-position: 0% 28%
+                }
+                50% {
+                    background-position: 100% 73%
+                }
+                100% {
+                    background-position: 0% 28%
+                }
+            }
+            @-o-keyframes AnimationName {
+                0% {
+                    background-position: 0% 28%
+                }
+                50% {
+                    background-position: 100% 73%
+                }
+                100% {
+                    background-position: 0% 28%
+                }
+            }
+            @keyframes AnimationName {
+                0% {
+                    background-position: 0% 28%
+                }
+                50% {
+                    background-position: 100% 73%
+                }
+                100% {
+                    background-position: 0% 28%
+                }
+            }
         }
         
         .wrap {
             padding: 10% 20%;
+            justify-content: center;
+            align-items: center;
         }
         
         h2 {
             margin-top: 3em;
-            color: grey;
+            color: darkslategray;
         }
         
         h2:first-child {
@@ -72,12 +113,14 @@
 
 <body>
     <div class="wrap">
-        <h2>About</h2>
+        <h2>About me</h2>
         <a href="#" class="underlined underlined--gradient">Kolupaev Vladislav</a>
-        <h2>ASP.NET Developer </h2>
+        <h2>Speciality</h2>
         <a href="#" class="underlined underlined--gradient">Middle ASP.NET Developer</a>
         <h2>My mail</h2>
         <a href="#" class="underlined underlined--gradient">kolupaev.vld@yandex.ru</a>
+        <h2>Skills</h2>
+        <a href="#" class="underlined underlined--gradient">Rabbit MQ, Docker, Redis, MSSQL, MongoDb</a>
     </div>
 </body>
 
